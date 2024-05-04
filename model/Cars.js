@@ -37,7 +37,8 @@ const Car = new mongoose.Schema({
     },
     notifications: [
         {type: mongoose.Types.ObjectId, ref:"Notification"}
-    ]
+    ],
+    organization: {type: mongoose.Types.ObjectId, ref:"Organization"}
 })
 
 module.exports = mongoose.model("Car",Car)

@@ -14,7 +14,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ["admin"],
         default: 'admin'
-    }
+    },
+    organizations: [
+        {type: mongoose.Types.ObjectId, ref:"Organization", default: []}
+    ]
 });
 
 const User = mongoose.model("User", userSchema);

@@ -8,5 +8,4 @@ carRouter.post("/confirmed", carController.confirmedCar)
 carRouter.get("/cars", carController.getCarsInfo)
 carRouter.get("/data", carController.getData)
 
-
 module.exports = carRouter
